@@ -13,41 +13,26 @@ We have also added the link of the GitHub Repository which was used to deploy th
             """
 )
 
+def hyperlink_button(label, link):
+    button_html = f'<a href="{link}" target="_blank" class="stButton">{label}</a>'
+    st.markdown(button_html, unsafe_allow_html=True)
+            
 st.markdown ("""
 ###
 ## 1) Charts and Statistics of Current Data """)
-# Create an st.button
-if st.button("DashBoard 1",key='button1'):
-    # Define the URL you want to open
-    url_to_open = "https://retail-store-forecasting-dashboard1.streamlit.app/"  
-    # Using a Webbrowser Function to open the URL when Button is clicked
-    webbrowser.open_new_tab(url_to_open)
+
+#Button 1
+hyperlink_button("DashBoard 1", "https://retail-store-forecasting-dashboard1.streamlit.app/")
     
 st.markdown (""" ## 2) Predicted Future Patterns and Measures""")
 #Button 2
-if st.button("DashBoard 2",key='button2'):
-    # Define the URL you want to open
-    url_to_open = "https://retail-store-forecasting-dashboard2.streamlit.app/"  
-    # Using a Webbrowser Function to open the URL when Button is clicked
-    webbrowser.open_new_tab(url_to_open)
+hyperlink_button("DashBoard 2", "https://retail-store-forecasting-dashboard2.streamlit.app/")
 
 st.markdown ("""
 ###
 ### GitHub Repository Link """)
-#Button 2
-if st.button("GitHub",key='button3'):
-    # Define the URL you want to open
-    url_to_open = "https://github.com/shrevesh/Retail-Store-Sales-Forcasting"  
-    # Using a Webbrowser Function to open the URL when Button is clicked
-    webbrowser.open_new_tab(url_to_open)
-
-# Define a function to create a button with a hyperlink appearance
-def hyperlink_button(label, link):
-    button_html = f'<a href="{link}" target="_blank" class="stButton">{label}</a>'
-    st.markdown(button_html, unsafe_allow_html=True)
-
-# Usage
-hyperlink_button("Click me to visit OpenAI", "https://github.com/shrevesh/Retail-Store-Sales-Forcasting")
+#Button 3
+hyperlink_button("Click to Open GitHub", "https://github.com/shrevesh/Retail-Store-Sales-Forcasting")
 
 
 st.markdown ("""
