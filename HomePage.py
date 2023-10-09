@@ -41,6 +41,14 @@ if st.button("GitHub",key='button3'):
     # Using a Webbrowser Function to open the URL when Button is clicked
     webbrowser.open_new_tab(url_to_open)
 
+# Define a function to create a button with a hyperlink appearance
+def hyperlink_button(label, link):
+    button_html = f'<a href="{link}" target="_blank" class="stButton">{label}</a>'
+    st.markdown(button_html, unsafe_allow_html=True)
+
+# Usage
+hyperlink_button("Click me to visit OpenAI", "https://github.com/shrevesh/Retail-Store-Sales-Forcasting")
+
 
 st.markdown ("""
 ### Team Members\n 1) Gulshan Kumar \n 2) S Shrevesh
