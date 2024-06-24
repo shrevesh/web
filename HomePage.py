@@ -36,7 +36,7 @@ hyperlink_button("Click to Open GitHub", "https://github.com/shrevesh/Retail-Sto
 
 
 st.markdown ("""
-### Team Members\n 1) Gulshan Kumar \n 2) S Shrevesh
+### Team Members\n 1) Gulshan Kumar \n 2) S Shrevesh \n 3) Paras Vyas
               
 ### Mentors \n 1) Devansh \n  2) Nilay Ganvit  
 """)
